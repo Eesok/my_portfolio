@@ -1,16 +1,20 @@
 import React, { Component } from 'react';
+import '../App.css';
 
 class Header extends Component {
-    render() {
-        return (
-					<div>
-						<h2>Home</h2>
-						<h2>Projects</h2>
-						<h2>About</h2>
-						<h2>Contact</h2>
-					</div>
-				);
-    }
+	render() {
+		return (
+			<div class='dropdown'>
+				<button class='dropbtn'>Menu</button>
+				<div class='dropdown-content'>
+					<a href='#'>Home</a>
+					<a href='#'>Projects</a>
+					<a href='#'>About Me</a>
+					<a href='#'>Contact</a>
+				</div>
+			</div>
+		);
+	}
 }
 
 export default Header;
